@@ -7,7 +7,14 @@
     width: 1200px;
     height: auto;
     image-rendering: pixelated;
-    /* Alternativas para compatibilidad */
     image-rendering: crisp-edges;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
