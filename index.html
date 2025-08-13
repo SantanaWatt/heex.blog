@@ -19,9 +19,9 @@
         }
         .image-container img {
             width: 100%;
-            max-width: 1200px; /* Máximo ancho para no hacerse gigante */
+            max-width: 1200px;
             height: auto;
-            object-fit: contain; /* La imagen se adapta sin recortarse */
+            object-fit: contain;
             image-rendering: pixelated;
             margin-top: 20px;
         }
@@ -33,14 +33,13 @@
             font-weight: normal;
             color: #aaa;
         }
-        /* Blog container */
         .blog-container {
             max-width: 1200px;
             margin: auto;
             padding: 40px 20px;
             display: flex;
-            flex-direction: column; /* Apila entradas verticalmente */
-            gap: 20px; /* Espacio entre entradas */
+            flex-direction: column;
+            gap: 20px; 
             align-items: center;
         }
         .blog-post {
@@ -48,15 +47,15 @@
             border-radius: 8px;
             overflow: hidden;
             width: 100%;
-            max-width: 600px; /* Limitar ancho de cada post */
+            max-width: 600px;
             text-align: left;
             box-shadow: 0 0 10px rgba(0,0,0,0.7);
         }
         .blog-post img {
             width: 100%;
-            height: 300px; /* Altura fija para uniformidad */
-            object-fit: contain; /* Imagen se adapta dentro sin recortar */
-            background: black; /* Para evitar espacios blancos */
+            height: 300px; 
+            object-fit: contain;
+            background: black;
             display: block;
         }
         .blog-post-content {
@@ -72,7 +71,7 @@
             margin-bottom: 12px;
         }
         .blog-post-content p {
-            white-space: pre-wrap; /* Respeta saltos de línea en texto */
+            white-space: pre-wrap;
             line-height: 1.4;
         }
         a {
@@ -95,18 +94,16 @@
     <h5>Developed by SantanaPuffs</h5>
     <a href="https://santanawatt.itch.io/heex-citadelbreaker">Check Citadel Breaker in Itch.io</a>
 
-    <!-- Contenedor del blog -->
     <section class="blog-container" id="blog-container"></section>
 
     <script>
         fetch("posts.json")
             .then(res => res.json())
             .then(posts => {
-                // Ordenar posts: más nuevo arriba
                 posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
                 const container = document.getElementById("blog-container");
-                container.innerHTML = ''; // limpio antes
+                container.innerHTML = '';
 
                 posts.forEach(post => {
                     const article = document.createElement("article");
