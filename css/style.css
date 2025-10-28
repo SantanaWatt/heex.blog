@@ -138,3 +138,7 @@ body{
     gap: 40px; 
 }
 
+h1.text_color_cooming, h2.text_color_cooming {
+  color: rgb(114, 8, 35);
+}
+

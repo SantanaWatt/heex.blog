@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>HEEX Game Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: black;
@@ -86,7 +87,7 @@
     <header></header>
 
     <div class="image-container">
-        <img src="assets/HEEXtitle_mk1.png" alt="HEEX Title" />
+        <img src="assets/HEEXtitle.png" alt="HEEX Title" />
     </div>
 
     <h3>COOMING SOON</h3>
@@ -94,34 +95,16 @@
     <!-- <h5>Developed by SantanaPuffs</h5>-->
     <!--  <a href="https://santanawatt.itch.io/heex-citadelbreaker">Check HEEX: Citadel Breaker in Itch.io</a> -->
 
-    <iframe height="200" frameborder="0" src="https://itch.io/embed/3300345" width="552"><a href="https://santanawatt.itch.io/heex-citadelbreaker">HEEX: Citadel Breaker by SantanaWatt</a></iframe>
 
-     <!--<section class="blog-container" id="blog-container"></section>
+    <h1 class="text_color_cooming">IN MAINTENANCE</h1>
+    <h2 class="text_color_cooming">Workin' in something big, all of you will see...</h2>
 
-    <script>
-        fetch("posts.json")
-            .then(res => res.json())
-            .then(posts => {
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-                const container = document.getElementById("blog-container");
-                container.innerHTML = '';
+    <!-- <iframe height="200" frameborder="0" src="https://itch.io/embed/3300345" width="552"><a href="https://santanawatt.itch.io/heex-citadelbreaker">HEEX: Citadel Breaker by SantanaWatt</a></iframe> -->
 
-                posts.forEach(post => {
-                    const article = document.createElement("article");
-                    article.classList.add("blog-post");
-                    article.innerHTML = `
-                        <img src="${post.image}" alt="${post.title}">
-                        <div class="blog-post-content">
-                            <h2>${post.title}</h2>
-                            <small>${post.date}</small>
-                            <p>${post.excerpt}</p>
-                        </div>
-                    `;
-                    container.appendChild(article);
-                });
-            });
-    </script>-->
+    <section class="blog-container" id="blog-container"></section>
+
+
 
 </body>
 </html>
