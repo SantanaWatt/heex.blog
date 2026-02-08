@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'CourierPrimeBold';
+    src: url('Assets/Fonts/Courier_Prime/CourierPrime-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('Assets/Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PlaywriteBasic';
+    src: url('Assets/Fonts/Playwrite_NZ_Basic/Playwrite_NZ_Basic-Regular.ttf') format('truetype');
+}
+
+
+.title {
+    text-align: center;
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    font-family: 'PlayfairDisplay', serif;
+}
+
+.webstyle1 {
+    background-color: rgb(255, 234, 206);
+    font: italic 20px/30px 'CourierPrimeBold', serif;
+}
+
+.text1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'PlaywriteBasic', serif;
+}

@@ -1,0 +1,99 @@
+.SantanaMainComicsans{
+    color: red;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.LargeSep {
+    padding-top: 50px;
+}
+
+/* BAckground and body things */
+body {
+  background-color: #000;
+}
+
+.boton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    display: inline-block;          /* que se comporte como un botón */
+    padding: 10px 20px;             /* espacio interno */
+    margin: 20;
+    background-color: #4b0415;      /* color de fondo */
+    color: #af1010;                     /* color del texto */
+    text-decoration: none;           /* quita subrayado */
+    border-radius: 20px;              /* bordes redondeados */
+    transition: background 0.3s;    /* efecto suave al pasar el cursor */
+}
+
+.boton:hover {
+    background-color: #ff0000;       /* cambia al pasar el mouse */
+    color: #ffffff; 
+}
+
+
+/* Font */
+.TerminalText {
+  background-color: #000;
+  color: #b9052c;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin: 0;
+  overflow: hidden;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+/* Center that shi */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* scanning ass effect */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.05),
+    rgba(255, 0, 0, 0.05) 3px,
+    transparent 5px,
+    transparent 3px
+  );
+  animation: scan 6s linear infinite;
+  z-index: 1;
+}
+
+/* Movement lines */
+@keyframes scan {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
+}
+
+/* Flashing text Light */
+p:last-child::after {
+  content: "_";
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Sutil bright */
+h1 {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #9b0738; }
+  to { text-shadow: 0 0 20px #b10202, 0 0 30px #ff0000; }
+}
