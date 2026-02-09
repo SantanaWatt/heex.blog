@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Liberia -->
+    <title>El Edén</title>
+</head>
+<body class="webstyle1">
+    <!-- OLA-->
+
+    <!-- Imagen de header (No se usa en realidad) -->
+    <!-- <center><img src="Assets/Images/window1.jpg" alt="Descripción" width="1000" height="100"></center> -->
+    <br>
+    <br>
+    <!-- La barra que se mueve asi bien xdxdxdxd -->
+    <div class="bar">
+        <span class="bar_content">
+            INSTITUTO TECNICO Y BANCARIO SAN CARLOS - U5K4NG4-01 & NainKanga - OXXO SPIN - LAS DROGAS NO SON COOL -
+        </span>
+    </div>
+
+    <a><h1 class="title rellax" data-rellax-speed="-1" data-aos="fade-up">EL EDÉN</h1></a>
+
+    <center><a id="typewriter"></a></center>
+
+    <center><img src="Assets/Images/window1.jpg" alt="Descripción" width="250" height="300"></center>
+
+    <!-- cuchaste eso Misi? >:( -->
+    <!-- toi escuchando eso vanny :C -->
+     
+
+    <!-- Miembros -->
+    <!-- NOTA: Creo que mi script esta un poco mrd para lo de los miembros. Estoy buscando como solucionarlo. -->
+    <center>
+    <h3 class="grad rellax" data-rellax-speed="-1">NUESTRO EQUIPO: </h3>
+    
+    <div class="rellax" data-rellax-speed="-1">
+        <span class="members line rellax" data-rellax-speed="-1">- Carlos Paxtian</span><br>
+        <span class="members line rellax" data-rellax-speed="-2">- Emiliano Moya</span><br>
+        <span class="members line rellax" data-rellax-speed="-3">- Leonardo Gonzalez</span><br>
+        <span class="members line rellax" data-rellax-speed="-4">- Alejandro Anime Uwu</span><br>
+        <span class="members line rellax" data-rellax-speed="-5">- Leonardo Gasca</span><br>
+        <span class="members line rellax" data-rellax-speed="-6">- Diego Santana</span><br>
+    </div>
+    </center>
+
+    <center><img src="Assets/Images/Monika-PNG-Isolated-Pic.png" class="rellax vibrate-1" data-rellax-speed="-1" alt="Monika" width="653" height="895"></center>
+
+    <!-- SCRIPTS -->
+     <!-- Este es para el efecto de maquina de escribir (Typewriter) -->
+    <script>
+    const text = "El Edén es un proyecto dedicado a la creación de hortalizas sostenibles para consumo personal.";
+    const speed = 50; // milisegundos por letra uwu
+
+    let i = 0;
+    const target = document.getElementById("typewriter");
+
+    function typeWriter() {
+        if (i < text.length) {
+            target.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    window.onload = typeWriter;
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script>
+    AOS.init({
+    duration: 1000, // Cuánto tarda la animación (1 segundo)
+    once: false,    // Si quieres que se repita cada vez que subas y bajes
+    mirror: true    // Esto hace que se mueva al bajar Y al subir
+    });
+    </script>
+
+</body>
+</html>

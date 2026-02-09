@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'CourierPrimeBold';
+    src: url('Assets/Fonts/Courier_Prime/CourierPrime-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('Assets/Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PlaywriteBasic';
+    src: url('Assets/Fonts/Playwrite_NZ_Basic/Playwrite_NZ_Basic-Regular.ttf') format('truetype');
+}
+
+
+.title {
+    text-align: center;
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    font-family: 'PlayfairDisplay', serif;
+}
+
+.webstyle1 {
+    background-color: rgb(255, 234, 206);
+    font: italic 20px/30px 'CourierPrimeBold', serif;
+}
+
+.text1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'PlaywriteBasic', serif;
+}
+
+.members {
+    font-size: 30px;
+    color: rgb(94, 59, 10);
+    font-family: 'PlaywriteBasic', serif;
+}
+
+.line {
+  margin-bottom: 5px; /* Reduce el espacio entre líneas */
+}   
+
+/* Texto en gradiente */
+.grad {
+	font-family: 'PlaywriteBasic';
+	font-size: 2rem;
+	font-weight:  100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  background-color: #db8c24;
+  color: rgb(255, 237, 158);
+
+  font-family: CourierPrimeBold;
+  font-size: 30px;
+}
+
+.bar_content {
+  display: block; /* no se que hace esta wea pero tiene que ver con el width */
+
+  width: 100%;
+  transform: translateX(100%); /* animación comienza fuera de la pantalla  */
+
+  /* Add the animation */
+  animation: move 30s linear infinite /* esta madre hace que se repita pero no se hacer que se repita más rapido DXdXdXdXdx PD: ya se como hacer que se repita más rapido hdsptm que buen programador que soy ajua*/;
+}
+
+/* animasion */
+@keyframes move {
+  to { transform: translateX(-100%); } 
+}
+
+.text-sticky {
+  position: -webkit-sticky; /* Para compatibilidad con Safari (No tengo Mac) */
+  position: sticky;
+  top: 20px; 
+}
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1 (Lo hice con animista.net wuwuwu)
+ * ----------------------------------------
+ */
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+ 
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
